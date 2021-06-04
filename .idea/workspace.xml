@@ -21,6 +21,17 @@
   <component name="ChangeListManager">
     <list default="true" id="f1565d55-2bd5-4a67-93aa-2a2cd719f8e7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/SPACE INVADERS GAME-01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/SPACE INVADERS GAME-02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/SPACE INVADERS GAME-04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/SPACE INVADERS GAME-09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/SPACE INVADERS GAME-10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/SPACE INVADERS GAME-11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/bullet.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/bullet.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/rocket.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/spaceship2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/spaceshipd.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622333945102</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Including rocks">
+      <created>1622430138856</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1622430138857</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -128,27 +146,32 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Including rocks" />
     <option name="LAST_COMMIT_MESSAGE" value="Including rocks" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1259" height="40" key="GridCell.Tab.0.bottom" timestamp="1622387501598">
+    <state width="1259" height="48" key="GridCell.Tab.0.bottom" timestamp="1622831323943">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state width="1259" height="40" key="GridCell.Tab.0.bottom/0.0.1280.690@0.0.1280.690" timestamp="1622387501598" />
-    <state width="1259" height="40" key="GridCell.Tab.0.center" timestamp="1622387501597">
+    <state width="1259" height="48" key="GridCell.Tab.0.bottom/0.0.1280.690@0.0.1280.690" timestamp="1622831323943" />
+    <state width="1259" height="48" key="GridCell.Tab.0.center" timestamp="1622831323943">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state width="1259" height="40" key="GridCell.Tab.0.center/0.0.1280.690@0.0.1280.690" timestamp="1622387501597" />
-    <state width="1259" height="40" key="GridCell.Tab.0.left" timestamp="1622387501597">
+    <state width="1259" height="48" key="GridCell.Tab.0.center/0.0.1280.690@0.0.1280.690" timestamp="1622831323943" />
+    <state width="1259" height="48" key="GridCell.Tab.0.left" timestamp="1622831323943">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state width="1259" height="40" key="GridCell.Tab.0.left/0.0.1280.690@0.0.1280.690" timestamp="1622387501597" />
-    <state width="1259" height="40" key="GridCell.Tab.0.right" timestamp="1622387501598">
+    <state width="1259" height="48" key="GridCell.Tab.0.left/0.0.1280.690@0.0.1280.690" timestamp="1622831323943" />
+    <state width="1259" height="48" key="GridCell.Tab.0.right" timestamp="1622831323943">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state width="1259" height="40" key="GridCell.Tab.0.right/0.0.1280.690@0.0.1280.690" timestamp="1622387501598" />
+    <state width="1259" height="48" key="GridCell.Tab.0.right/0.0.1280.690@0.0.1280.690" timestamp="1622831323943" />
+    <state x="232" y="77" key="Vcs.Push.Dialog.v2" timestamp="1622430140909">
+      <screen x="0" y="0" width="1280" height="690" />
+    </state>
+    <state x="232" y="77" key="Vcs.Push.Dialog.v2/0.0.1280.690@0.0.1280.690" timestamp="1622430140909" />
   </component>
 </project>
