@@ -34,7 +34,7 @@ pygame.display.set_icon(icon)
 # Player
 playerImg = pygame.image.load('img/spaceship.png')
 playerX= 370
-playerY= 440
+playerY= 420
 playerX_change = 0
 bullet_state = "ready"
 
@@ -133,7 +133,7 @@ def fire_bullet(x,y): # the bulletX_state has to be a global variable so that th
     global bullet_state
     bullet_state = "fire"
     #draw the bullet on the screen
-    screen.blit(bulletImg,(x+16,y+10))
+    screen.blit(bulletImg,(x+30,y+10))
     # 16 so that it appears in the center of the spaceship
     #10 to give the illusion that it is being fired from the top of the spaceship
 
@@ -278,12 +278,12 @@ while True:
 
         # After firering the bullet it must have it's own path and not follwo the spaceship
 
-    if bullet_state is "fire": #we now move the bullet
-        fire_bullet(bulletX,bulletY)   #nwo decrease the value of the bullet so it goes up
+    if bullet_state is "fire": # We now move the bullet
+        fire_bullet(bulletX,bulletY)   # Now decrease the value of the bullet so it goes up
         bulletY -= bulletY_change
 
 
-    player(playerX,playerY) #we have to draw the player after the screen
+    player(playerX,playerY) # We have to draw the player after the screen
     show_score(textX, testY)
 
 
