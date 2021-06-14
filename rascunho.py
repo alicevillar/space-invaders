@@ -10,20 +10,20 @@ pygame.init()
 # create the screen
 screen = pygame.display.set_mode((800, 600))
 
-# Background
-background = pygame.image.load('background.png')
+# Music and sounds
+pygame.mixer.init()
+pygame.mixer.music.load('SweetMelodyArtlist.mp3')
 
-# Sound
-mixer.music.load("background.wav")
-mixer.music.play(-1)
+# Background
+background = pygame.image.load('img/main_background.png')
 
 # Caption and Icon
 pygame.display.set_caption("Space Invader")
-icon = pygame.image.load('ufo.png')
+icon = pygame.image.load('img/planet-earth.png')
 pygame.display.set_icon(icon)
 
 # Player
-playerImg = pygame.image.load('player.png')
+playerImg = pygame.image.load('img/spaceship.png')
 playerX = 370
 playerY = 480
 playerX_change = 0
@@ -37,7 +37,7 @@ enemyY_change = []
 num_of_enemies = 6
 
 for i in range(num_of_enemies):
-    enemyImg.append(pygame.image.load('enemy.png'))
+    enemyImg.append(pygame.image.load('img/comet.png'))
     enemyX.append(random.randint(0, 736))
     enemyY.append(random.randint(50, 150))
     enemyX_change.append(4)
@@ -48,7 +48,7 @@ for i in range(num_of_enemies):
 # Ready - You can't see the bullet on the screen
 # Fire - The bullet is currently moving
 
-bulletImg = pygame.image.load('bullet.png')
+bulletImg = pygame.image.load('img/bullet.png')
 bulletX = 0
 bulletY = 480
 bulletX_change = 0
@@ -118,8 +118,8 @@ while running:
             if event.key == pygame.K_RIGHT:
                 playerX_change = 5
             if event.key == pygame.K_SPACE:
-                if bullet_state is "ready":
-                    bulletSound = mixer.Sound("laser.wav")
+                if bullet_state == "ready":
+                    bulletSound = mixer.Sound("laser.flac")
                     bulletSound.play()
                     # Get the current x cordinate of the spaceship
                     bulletX = playerX
@@ -128,6 +128,9 @@ while running:
         if event.type == pygame.KEYUP:
             if event.key == pygame.K_LEFT or event.key == pygame.K_RIGHT:
                 playerX_change = 0
+
+    # 5 = 5 + -0.1 -> 5 = 5 - 0.1
+    # 5 = 5 + 0.1
 
     playerX += playerX_change
     if playerX <= 0:
@@ -171,7 +174,7 @@ while running:
         bulletY = 480
         bullet_state = "ready"
 
-    if bullet_state is "fire":
+    if bullet_state == "fire":
         fire_bullet(bulletX, bulletY)
         bulletY -= bulletY_change
 

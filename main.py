@@ -3,6 +3,7 @@ import random
 import math
 from pygame import mixer
 
+
 #initialize pygame
 pygame.get_init()
 pygame.font.init()
@@ -19,8 +20,11 @@ screen = pygame.display.set_mode((853,632)) #width, height
 # background main
 background = pygame.image.load('img/main_background.png')
 
-# background 2 => you won this round
+# background 2 => you win
 background2 = pygame.image.load('img/cat_you_win.png')
+
+# background 2 => you win
+cover_image = pygame.image.load('img/cover.png')
 
 
 # Title and Icon
@@ -34,6 +38,8 @@ playerX= 370
 playerY= 500
 playerX_change = 0
 bullet_state = "ready"
+
+
 
 # Comets
 cometImg = []
@@ -49,6 +55,8 @@ for i in range(num_of_enemies):
     cometY.append(random.randint(40, 70))
     comentX_change.append(4)
     cometY_change.append(40)
+
+
 
 # ETs
 etImg  = []
@@ -81,10 +89,6 @@ bulletX_state ="ready"
 #ready state = you can't see the bullet on the screen
 #fire state = thebullet is in motion
 
-# SUN
-sun = pygame.image.load('img/sun.png')
-
-
 # SCORE
 score_value = 0
 font = pygame.font.Font('freesansbold.ttf',32)
@@ -97,6 +101,9 @@ over_font = pygame.font.Font('freesansbold.ttf',64)
 
 # Tick
 TICK_VALUE = 90
+
+# Game
+running = False
 
 # FUNCTIONS
 
@@ -124,7 +131,7 @@ def fire_bullet(x,y): # the bulletX_state has to be a global variable so that th
     global bullet_state
     bullet_state = "fire"
     #draw the bullet on the screen
-    screen.blit(bulletImg,(x+60,y+50))
+    screen.blit(bulletImg,(x+43,y+50))
     # it has to appearsin the center and top of the spaceship
 
 #distance between two points by using the distance formula, which is an application of
@@ -137,29 +144,26 @@ def isCollision(cometX, cometY, bulletX, bulletY):
         return False
 
 # Game loop
-running = True
+
 while True:
     clock.tick(TICK_VALUE)
     # The screen has to be drawn on top of everything else
-    # screen.fill((0, 0, 0)) # RGB - Red/Green/Blue
-    # background
     screen.blit(background, (0,0))
-    screen.blit(sun, (650, 34))
 
+    player(playerX,playerY) # We have to draw the player after the screen
+    show_score(textX, testY) # We have to draw score player after the screen
 
     # To get coordinates on the screen
     #for event in pygame.event.get():
         #if event.type == pygame.MOUSEBUTTONUP:
             #pos = pygame.mouse.get_pos()
             #print(pos)
-
-
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
         # If keystroke is pressed, check whether it is right or left:
         if event.type == pygame.KEYDOWN: # a key has been pressed
-            print("key was pressed")
+            #print("key was pressed")
             if event.key == pygame.K_LEFT:
                 playerX_change =- 3
             if event.key == pygame.K_RIGHT:
@@ -205,8 +209,14 @@ while True:
             game_over_text()
             break
 
-        if score_value >= 40:
+        if score_value >= 2:
             you_win()
+            playerImg = pygame.image.load('img/transp.png')
+            bulletImg = pygame.image.load('img/transp.png')
+            for i in range(num_of_ets):
+                etImg[i] = pygame.image.load('img/transp.png')
+            for i in range(num_of_enemies):
+                cometImg[i] = pygame.image.load('img/transp.png')
             break
 
         cometX[i] += comentX_change[i]
@@ -236,7 +246,7 @@ while True:
             etImg[i] = pygame.transform.flip(etImg[i], True, False)
             et_X_change[i] = 5  # when hits the left it
             et_Y[i] += et_Y_change[i]  # we simply increase the value of Y when it hits the bounday
-        elif et_X[i] >= 800:  # 736 pixels because the width of the spaceship
+        elif et_X[i] >= 800:
             etImg[i] = pygame.transform.flip(etImg[i], True, False)
 
             et_X_change[i] = -5
@@ -245,7 +255,6 @@ while True:
         # Collision
         collision = isCollision(cometX[i], cometY[i], bulletX, bulletY)
         collision_2 = isCollision(et_X[i], et_Y[i], bulletX, bulletY)
-
 
         if collision ^ collision_2: # bitwise XOR (^)
             explosionSound = mixer.Sound("explosion.wav")
@@ -275,10 +284,11 @@ while True:
         bulletY -= bulletY_change
 
 
-    player(playerX,playerY) # We have to draw the player after the screen
-    show_score(textX, testY)
 
 
     # to keep updating the game window that I'm working on
     pygame.display.update()
+
+
+# This makes sure that the pygame window closes:
 
