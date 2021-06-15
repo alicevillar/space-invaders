@@ -32,7 +32,7 @@ $ git clone https://github.com/alicevillar/space-invaders
 
 ### Resources:
 
-I started this project when I saw the [demonstration](https://www.youtube.com/watch?v=FfWpgLFMI7w&t=6893s) from [attreyabhatt](https://github.com/attreyabhatt/Space-Invaders-Pygame). I studied his project and created my own version. :smiley: ! 
+I started this project when I saw the [demonstration](https://www.youtube.com/watch?v=FfWpgLFMI7w&t=6893s) from [attreyabhatt](https://github.com/attreyabhatt). I studied his [project](https://github.com/attreyabhatt/Space-Invaders-Pygame)) and created my own version. :smiley: ! 
 
 The architecture is similar, but I implemented several new features, which changed the code a lot:
 
