@@ -177,7 +177,28 @@
       <option name="project" value="LOCAL" />
       <updated>1623794377018</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="update">
+      <created>1623794637992</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1623794637992</updated>
+    </task>
+    <task id="LOCAL-00012" summary="update">
+      <created>1623794726385</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1623794726385</updated>
+    </task>
+    <task id="LOCAL-00013" summary="update">
+      <created>1623794856787</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1623794856787</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -239,9 +260,9 @@
       <screen x="0" y="0" width="1280" height="690" />
     </state>
     <state x="141" y="0" key="SettingsEditor/0.0.1280.690@0.0.1280.690" timestamp="1623453067791" />
-    <state x="232" y="77" key="Vcs.Push.Dialog.v2" timestamp="1623794378498">
+    <state x="232" y="77" key="Vcs.Push.Dialog.v2" timestamp="1623794858662">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state x="232" y="77" key="Vcs.Push.Dialog.v2/0.0.1280.690@0.0.1280.690" timestamp="1623794378498" />
+    <state x="232" y="77" key="Vcs.Push.Dialog.v2/0.0.1280.690@0.0.1280.690" timestamp="1623794858662" />
   </component>
 </project>
