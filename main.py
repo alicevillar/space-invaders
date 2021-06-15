@@ -23,8 +23,6 @@ background = pygame.image.load('img/main_background.png')
 # background 2 => you win
 background2 = pygame.image.load('img/cat_you_win.png')
 
-# background 2 => you win
-cover_image = pygame.image.load('img/cover.png')
 
 
 # Title and Icon
@@ -38,8 +36,6 @@ playerX= 370
 playerY= 500
 playerX_change = 0
 bullet_state = "ready"
-
-
 
 # Comets
 cometImg = []
@@ -55,8 +51,6 @@ for i in range(num_of_enemies):
     cometY.append(random.randint(40, 70))
     comentX_change.append(4)
     cometY_change.append(40)
-
-
 
 # ETs
 etImg  = []
@@ -190,13 +184,10 @@ while True:
     elif playerX >= 750: #  width - width of the spaceship 853-140
         playerX = 750
 
-    #ENEMY MOVEMENT
 
-    # Creating boundaries for the enemy
-    # tell the spaceship that hey: if your x coordinate reaches less that zero, make sure it turns back to zero because I don't want you to go beyond zero. Same thing if it goes to the right, beyond 800.
+    # YOU WIN & GAME OVER
+
     for i in range (num_of_enemies):
-
-        # GAME OVER
         if cometY[i] > 500:
             for i in range(num_of_enemies):
                 cometY[i] = 520
@@ -209,7 +200,7 @@ while True:
             game_over_text()
             break
 
-        if score_value >= 2:
+        if score_value >= 30:
             you_win()
             playerImg = pygame.image.load('img/transp.png')
             bulletImg = pygame.image.load('img/transp.png')
@@ -282,8 +273,6 @@ while True:
     if bullet_state is "fire": # We now move the bullet
         fire_bullet(bulletX,bulletY)   # Now decrease the value of the bullet so it goes up
         bulletY -= bulletY_change
-
-
 
 
     # to keep updating the game window that I'm working on
