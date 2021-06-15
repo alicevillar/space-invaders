@@ -34,10 +34,7 @@ $ git clone https://github.com/alicevillar/space-invaders
 3. `python main.py`
  
 ### Features
-
-- SFX and BGM (New!)
-- High score is kept
-- feel free to use sprite
+ 
 
 ![sprite](https://github.com/dannyso16/pynasour/blob/master/media/sprite.gif)
 
