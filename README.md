@@ -6,6 +6,7 @@ I started this project when I saw the [demonstration](https://www.youtube.com/wa
 I read his [project page](https://chrispresso.io/AI_Learns_To_Play_Snake) and then wanted to create my own version.
 The architecture is similar, but I used my own images and added the following features :smiley: !
 
+![print](cover.png)
 
 ## Gameplay  
 
@@ -14,10 +15,7 @@ To play the game, use :
 - `LEFT ARROW` to move left,
 - `RIGHT ARROW` to move right,
 - `SPACE` to shoot enemies  
- 
-## Cover
-
-![print](cover.png)
+  
 
 ## Getting Started
 
