@@ -1,6 +1,6 @@
 # Space Adventure (space invaders)
 
-Space Adventure is a game I created using Pygame library. 
+Space Adventure is a game based on space invaders and created with Pygame library. 
 
 
   
