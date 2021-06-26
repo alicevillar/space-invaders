@@ -126,6 +126,7 @@ def fire_bullet(x,y): # the bulletX_state has to be a global variable so that th
     screen.blit(bulletImg,(x+43,y+50))
     # it has to appearsin the center and top of the spaceship
 
+
 #distance between two points by using the distance formula, which is an application of
 # the Pythagorean theorem. We can rewrite the Pythagorean theorem as d=√((x2-x1)²+(y2-y1)²)
 def isCollision(cometX, cometY, bulletX, bulletY):
@@ -138,6 +139,7 @@ def isCollision(cometX, cometY, bulletX, bulletY):
 # Game loop
 
 running = True
+
 while running:
     clock.tick(TICK_VALUE)
     # The screen has to be drawn on top of everything else
