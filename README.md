@@ -17,7 +17,7 @@ To play the game, use :
 
 ## Getting Started
 
-![play](clipchamp.mov)
+![play](https://github.com/alicevillar/space-invaders/blob/main/clipchamp.mov)
 
 
 ### Install
