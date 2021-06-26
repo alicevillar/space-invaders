@@ -19,7 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1565d55-2bd5-4a67-93aa-2a2cd719f8e7" name="Default Changelist" comment="" />
+    <list default="true" id="f1565d55-2bd5-4a67-93aa-2a2cd719f8e7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,11 +39,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1t57YbpCVBTHujTFptUIi8ltpJO" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -198,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623794856787</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="update">
+      <created>1623794949802</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1623794949802</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -214,28 +228,29 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Including rocks" />
     <MESSAGE value="Final Version" />
     <MESSAGE value="update" />
     <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1259" height="159" key="GridCell.Tab.0.bottom" timestamp="1623793586433">
+    <state width="1259" height="43" key="GridCell.Tab.0.bottom" timestamp="1623857469733">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state width="1259" height="159" key="GridCell.Tab.0.bottom/0.0.1280.690@0.0.1280.690" timestamp="1623793586433" />
-    <state width="1259" height="159" key="GridCell.Tab.0.center" timestamp="1623793586433">
+    <state width="1259" height="43" key="GridCell.Tab.0.bottom/0.0.1280.690@0.0.1280.690" timestamp="1623857469733" />
+    <state width="1259" height="43" key="GridCell.Tab.0.center" timestamp="1623857469733">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state width="1259" height="159" key="GridCell.Tab.0.center/0.0.1280.690@0.0.1280.690" timestamp="1623793586433" />
-    <state width="1259" height="159" key="GridCell.Tab.0.left" timestamp="1623793586433">
+    <state width="1259" height="43" key="GridCell.Tab.0.center/0.0.1280.690@0.0.1280.690" timestamp="1623857469733" />
+    <state width="1259" height="43" key="GridCell.Tab.0.left" timestamp="1623857469733">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state width="1259" height="159" key="GridCell.Tab.0.left/0.0.1280.690@0.0.1280.690" timestamp="1623793586433" />
-    <state width="1259" height="159" key="GridCell.Tab.0.right" timestamp="1623793586433">
+    <state width="1259" height="43" key="GridCell.Tab.0.left/0.0.1280.690@0.0.1280.690" timestamp="1623857469733" />
+    <state width="1259" height="43" key="GridCell.Tab.0.right" timestamp="1623857469733">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state width="1259" height="159" key="GridCell.Tab.0.right/0.0.1280.690@0.0.1280.690" timestamp="1623793586433" />
+    <state width="1259" height="43" key="GridCell.Tab.0.right/0.0.1280.690@0.0.1280.690" timestamp="1623857469733" />
     <state width="1259" height="208" key="GridCell.Tab.1.bottom" timestamp="1623347184268">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
@@ -260,9 +275,9 @@
       <screen x="0" y="0" width="1280" height="690" />
     </state>
     <state x="141" y="0" key="SettingsEditor/0.0.1280.690@0.0.1280.690" timestamp="1623453067791" />
-    <state x="232" y="77" key="Vcs.Push.Dialog.v2" timestamp="1623794858662">
+    <state x="232" y="77" key="Vcs.Push.Dialog.v2" timestamp="1623794950902">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state x="232" y="77" key="Vcs.Push.Dialog.v2/0.0.1280.690@0.0.1280.690" timestamp="1623794858662" />
+    <state x="232" y="77" key="Vcs.Push.Dialog.v2/0.0.1280.690@0.0.1280.690" timestamp="1623794950902" />
   </component>
 </project>

@@ -96,8 +96,6 @@ over_font = pygame.font.Font('freesansbold.ttf',64)
 # Tick
 TICK_VALUE = 90
 
-# Game
-running = False
 
 # FUNCTIONS
 
@@ -139,7 +137,8 @@ def isCollision(cometX, cometY, bulletX, bulletY):
 
 # Game loop
 
-while True:
+running = True
+while running:
     clock.tick(TICK_VALUE)
     # The screen has to be drawn on top of everything else
     screen.blit(background, (0,0))
@@ -253,11 +252,11 @@ while True:
             bulletY = 500 #reset the bullet to the starting point
             bullet_state = "ready" #because the bullet is not being shown anymore, we have to change the value to ready
             score_value += 1 # increase the score
-            cometX[i] = random.randint(0, 735)  # default position to the enemy so when the game starts or it is killed, it reloads and comes back in random places / anywhere between 0 and 800
-            cometY[i] = random.randint(50, 150)  # min and max heigh
-            et_X[i] = random.randint(0, 735)  # default position to the enemy so when the game starts or it is killed, it reloads and comes back in random places / anywhere between 0 and 800
-            et_Y[i] = random.randint(30, 150)  # min and max heigh
-
+            cometX[i] = random.uniform(0, 735)  # default position to the enemy so when the game starts or it is killed, it reloads and comes back in random places / anywhere between 0 and 800
+            cometY[i] = random.uniform(50, 150)  # min and max heigh
+            et_X[i] = random.uniform(0, 735)  # default position to the enemy so when the game starts or it is killed, it reloads and comes back in random places / anywhere between 0 and 800
+            et_Y[i] = random.uniform(30, 150)  # min and max heigh
+            # Draw samples from a uniform distribution
 
         comets(cometX[i], cometY[i], i)
         ets(et_X[i], et_Y[i], i)
@@ -278,6 +277,4 @@ while True:
     # to keep updating the game window that I'm working on
     pygame.display.update()
 
-
-# This makes sure that the pygame window closes:
 
