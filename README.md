@@ -17,6 +17,9 @@ To play the game, use :
 
 ## Getting Started
 
+![play](https://github.com/alicevillar/space-invaders/blob/main/clipchamp.mp4)
+
+
 ### Install
 
 1. Install Python and pygame ==> `pip install pygame==2.0.1`
