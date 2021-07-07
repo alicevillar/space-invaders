@@ -15,7 +15,7 @@ To play the game, use :
 
 ## Getting Started
 
-![play](https://github.com/alicevillar/space-invaders/blob/main/clipchamp.gif)
+![play](https://github.com/alicevillar/space-invaders/blob/main/ezgif.gif)
 
 
 ### Install
